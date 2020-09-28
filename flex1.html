@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Flex css
+        </title>
+        <style>
+            .form-row {
+                padding:10px 0px;
+                display: flex;
+            }
+           .form-row label {
+               padding-right: 10px;
+               flex: 1;
+           }
+           .form-row input {
+               flex:1;
+           }
+    .column-layout {
+        max-width: 1300px;
+        background-color: grey;
+        margin:40px;
+        padding:20px 50px;
+        display: flex;
+        
+    }
+    /**100%**/
+
+    .first-column {
+       border:2px solid red;
+       flex:2;
+       order:2;
+    }
+    .second-column {
+        border:2px solid green;
+        flex:1;
+        order:3;
+    }
+
+    .third-column {
+        border:2px solid yellow;
+        flex:1;
+        order:1;
+    }
+
+    .call-outs-container {
+        max-width: 1300px;
+        height: 800px;
+        background-color: grey;
+        /* margin:40px; */
+        padding:20px 50px;   
+        display: flex;
+        align-items:stretch;
+        justify-content: space-evenly;
+          /* justify-content:space-arounds; */
+        /* align-items: flex-end; */
+          /**cross-axis**/
+        /* justify-content: ;  *main-aixs* */
+    }
+    .row{
+        padding:20px;
+        margin-bottom: 20px;
+        /* flex:1; */
+        width: 20%;
+        border:2px solid red;
+    }
+    .row:nth-child(1) {
+        background-color: purple;
+    }
+    .row:nth-child(2) {
+        background-color:royalblue;
+    }
+.row:nth-child(3){
+    background-color: tomato;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="">
+                <div class="form-row">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="enter username">
+                </div>
+                <div class="form-row">
+                   <label for="user_password">User password</label>
+                   <input type="password" placeholder="enter password"> 
+                </div>
+                <div class="form-row">
+                    <label for="user_password">User password</label>
+                    <input type="password" placeholder="enter password"> 
+                 </div>
+ 
+            </form>
+        </div>
+<div class="column-layout">
+    <div class="first-column">
+        <h2>What is Lorem Ipsum?</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.
+        </p>
+        <p>
+        It has survived not only five centuries, but also the leap into electronic 
+              typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+               of Letraset sheets containing Lorem Ipsum passages, and more recently 
+            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>
+            It has survived not only five centuries, but also the leap into electronic 
+                  typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                   of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+                It has survived not only five centuries, but also the leap into electronic 
+                      typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                       of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p>
+                    It has survived not only five centuries, but also the leap into electronic 
+                          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                           of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+    </div>
+<div class="second-column">
+    <h3>Why do we use it?</h3>
+    <p>
+        It has survived not only five centuries, but also the leap into electronic 
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+         of Letraset sheets containing Lorem Ipsum passages, and more recently 
+      with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
+    </p>
+</div>
+
+<div class="third-column">
+    <h3>let's do it?</h3>
+    <p>
+        It has survived not only five centuries, but also the leap into electronic 
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+         of Letraset sheets containing Lorem Ipsum passages, and more recently 
+      with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
+    </p>
+</div>
+
+</div>
+
+<div class="call-outs-container">
+    <div class="row">
+        <h1>user1</h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.
+        </p>
+    </div>
+    <div class="row">
+        <h1>user2</h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.
+        </p>
+    </div>
+    <div class="row">
+        <h1>user3</h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.
+        </p>
+    </div>
+</div>
+
+    </body>
+</html>

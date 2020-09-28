@@ -1,0 +1,159 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+
+body {
+    font-family: 'Baloo Tammudu 2', cursive;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.wave {
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    height: 100%;
+    z-index: -1;
+}
+
+.img {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img img {
+    width: 500px;
+}
+
+.login-content {
+     display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    text-align: center;
+}
+
+.login-content img {
+    height: 100px;
+}
+
+form {
+    width: 360px;
+}
+
+.login-content h2 {
+    text-transform: uppercase;
+    margin: 15px 0px;
+}
+
+.login-content .input-div {
+    position: relative;
+    display: flex;
+    margin:25px 0px;
+    padding:5px 0px;
+    border-bottom: 2px solid purple;
+}
+
+.login-content .username {
+    margin-top: 0px;
+}
+
+.icon {
+    position: relative;
+    right:30px;
+    z-index: 1;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+ 
+}
+
+.input-div > div {
+    height: 40px;
+}
+
+.input-div > div > h5 {
+
+    position: absolute;
+    left:15px;
+    top:-20px;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.input-div > div > input {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    border:none;
+    outline: none;
+    font-size:16px;
+}
+
+.input-div::before, .input-div::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+}
+.input-div::before {
+    right: 50%;
+}
+
+.input-div::after {
+    left:50%;
+}
+
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    background-color: purple;
+    color:white;
+    font-size:18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+/* .input-div > div > input {
+    position: absolute;
+    left:0px;
+    top:0px;
+ 
+    border:none;
+    outline: none;
+    padding:20px 30px;
+} */
+
+@media screen and (max-width:1000px) {
+   form {
+        width: 290px;
+   }
+
+}
+
+@media screen and (max-width:900px){
+ .img {
+     display: none;
+ }
+
+ .wave {
+     display: none;
+ }
+
+ .login-content{
+     justify-content: center;
+ }
+}

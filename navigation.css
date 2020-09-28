@@ -1,0 +1,21 @@
+.container > div {
+    padding:10px;
+    text-align: center;
+    font-size:32px;
+}
+
+html,body {
+    background-color: grey;
+    height: 100%;
+}
+
+.container > div:nth-child(1) {
+    background-color: firebrick;
+}
+
+.container > div:nth-child(2){
+    background-color: lightseagreen;
+}
+.container > div:nth-child(3){
+    background-color: firebrick;
+}

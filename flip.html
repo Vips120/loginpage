@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FLIP
+        </title>
+        <style>
+div.a {
+    display: flex;
+}
+.container {
+                width: 240px;
+                height: 240px;
+                position: relative;
+                overflow: hidden;
+
+            }
+           .container a {
+               display: block;
+               width: 240px;
+               height:240px;
+               text-decoration: none;
+               color:black;
+           }
+           img {
+               width: 240px;
+               height:240px;
+           }
+
+           span.layer {
+               display: block;
+               width: 240px;
+               height:240px;
+               background-color:grey;
+               opacity: 0.8;
+               position: absolute;
+               top:0px;
+               left:0px;
+           }
+
+           span.left_text {
+               display: block;
+               background-color: royalblue;
+               padding:20px 0px;
+               border-radius: 100px;
+               text-align: center;
+               transition: all 1s ease-in-out 0s;
+               position: absolute;
+               top:0px;
+               left:-90px;
+
+           }
+
+
+           span.right_text {
+               display: block;
+               background-color: royalblue;
+               padding:20px 0px;
+               border-radius: 100px;
+               text-align: center;
+               transition: all 1.5s ease-in-out 0s;
+               position: absolute;
+               top:30px;
+               right:-100px;
+
+           }
+           .container:hover span.layer {
+               display: none;
+           }
+           .container:hover span.left_text {
+            top:10px;
+               left:10px;
+           }
+
+           .container:hover span.right_text {
+            top:30px;
+               right:30px;
+           }
+
+        </style>
+    </head>
+    <body>
+        <div class="a">
+            <div class="container">
+                <a href="#">
+                    <img src="./images/iphone11.jpg" />
+                   <span class="layer"></span>
+                   <span class="left_text">LEFT TEXT</span>
+                   <span class="right_text">
+                       RIGHT Text
+                   </span>
+      
+                </a>
+              </div>
+              <div class="container">
+                  <a href="#">
+                      <img src="./images/iphone11.jpg" />
+                     <span class="layer"></span>
+                     <span class="left_text">LEFT TEXT</span>
+                     <span class="right_text">
+                         RIGHT Text
+                     </span>
+        
+                  </a>
+                </div>
+        </div>
+        
+    </body>
+</html>

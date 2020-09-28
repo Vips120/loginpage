@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Transition and Animation
+        </title>
+        <style>
+            div.container {
+                width:300px;
+                height:300px;
+
+                 background-color:red;
+            transition-property: all;
+                transition-duration: 3000ms;
+                transition-timing-function: cubic-bezier(.99,.42,.24,.24);
+                transition-delay: 0s;
+                /* transition:all 2s ease-in-out 0s; */
+
+            }
+   div.container:hover {
+       width:700px;
+       background-color:green;
+   }
+
+            /**pseudo class
+             :hover
+             :active
+             :link
+             :focus 
+             :visited            
+             **/
+        </style>
+    </head>
+    <body>
+<a href="#">LINK</a>
+
+        <div class="container">
+
+        </div>
+    </body>
+</html>

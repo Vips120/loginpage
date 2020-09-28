@@ -1,0 +1,39 @@
+.card1 {
+    width: 240px;
+    height: 240px;
+    position: relative;
+    transition: all 2s ease-in-out 0s;
+    overflow: hidden;
+}
+
+.card1 a {
+    width: 240px;
+    height:240px;
+    display: block;
+}
+
+.card1 a.sub_card {
+  background-image: url('./images/iphone11.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.card1 span {
+    display: block;
+    width: 240px;
+    height: 240px;
+    /* border:2px solid red; */
+    background-color: grey;
+    position: absolute;
+    top:240px;
+    opacity: 0.7;
+    transition: all 1s ease-in-out 0s;
+}
+
+span h1, h4 {
+    text-align: center;
+}
+.card1:hover span{
+    top:0px;
+    left:0px;
+}

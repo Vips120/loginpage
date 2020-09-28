@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Navigation
+        </title>
+       <link rel="stylesheet" href="./navigation.css"> 
+       <style>
+           .container {
+               border:5px solid purple;
+               display: flex;
+               /* flex-wrap:wrap; */
+               /* height: 100%; */
+               /* align-items: center; */
+               /* flex-direction: column; */
+               /* flex-direction: column;
+               justify-content: flex-end;
+               align-items: flex-end; */
+               /* align-items:stretch; */
+               /* justify-content: flex-end; */
+               /* flex-direction: column; */
+               /* justify-content: space-between;
+               /** 
+                flex-start, flex-end center space-around space-between space-evenly
+               ***/ 
+           }
+
+           /* .search {
+               margin-left: auto;
+               border:2px solid green;
+           } */
+       /* .home {
+           margin-right: auto;
+       } */
+
+       /* .container > .search {
+           flex:3;  /**flex-grow, flex-shrink, flex-basis**/ 
+       /* }
+      .container > .home {
+          flex:1
+      }
+
+      .container > .logout {
+          flex:1
+      } */ 
+
+      /* .logout {
+          align-self: flex-start ;
+      }
+
+      .home {
+          align-self: flex-end;
+      } */
+
+      /* .container > div {
+          width: 300px;
+      } */
+      .home {
+          flex : 1 1 200px;
+          order:2;
+          /* flex-grow: 0; */
+          /* flex:1;
+          flex-grow: ;
+          flex-shrink: ;
+          flex-basis: ; */
+          /* flex-basis: 200px;
+          flex-shrink: 3; */
+        
+      }
+       .search {
+           flex:  1 1 400px;
+           order:1;
+           /* flex:1; */
+           /* flex-grow: 0;
+          flex-shrink: 3;
+           flex-basis: 200px;  */
+       }
+       </style> 
+    </head>
+    <body>
+        <nav class="container">
+          <div class="home">Home</div>
+          <div class="search">Search</div>
+          <!-- <div class="logout">Logout</div> -->
+          <!-- <div class="profile">profile</div> -->
+        </nav>
+    </body>
+</html>
